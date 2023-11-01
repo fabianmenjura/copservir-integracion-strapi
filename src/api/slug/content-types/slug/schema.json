@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "slugs",
+  "info": {
+    "singularName": "slug",
+    "pluralName": "slugs",
+    "displayName": "Slug"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nombre": {
+      "type": "string",
+      "required": true
+    },
+    "contenidos": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::contenido.contenido",
+      "mappedBy": "slug"
+    }
+  }
+}
