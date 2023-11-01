@@ -1,5 +1,77 @@
-# 🚀 Getting started with Strapi
+### 🚀 Getting Started with Strapi
+# Proyecto Strapi - Landing Establecimiento de Comercio Copservir
 
+¡Saludos! Este es el proyecto de landing para el establecimiento de comercio Copservir. A continuación, te proporcionamos la información y los enlaces necesarios:
+
+## Roles de Acceso
+
+- Rol Super Admin: **IMPORTANTE: EL USO DE ESTE ROL PUEDE CAUSAR DAÑOS GRAVES EN EL ADMINISTRADOR, SE RECOMIENDA PRECAUCIÓN.**
+- Rol Editor:
+  - Usuario: admin@admin.com
+  - Contraseña: Admin123
+
+## Versiones de los Componentes
+
+- Strapi: v4.13.1
+- Node: v16.20.2
+- MySQL: v5.7.40
+
+## Plugins Utilizados
+
+- Tiptap Editor v0.9.12 (utilizado para el editor WYSIWYG)
+- Awesome Help v1.0.8 (utilizado para los textos de ayuda)
+
+## Instrucciones de Instalación
+
+Sigue los siguientes pasos para instalar el proyecto en tu entorno local:
+
+### 1. Importar la Base de Datos:
+
+- Copia el archivo `copservir-integracion-strapi.sql.example` y renómbralo:
+```bash
+cp copservir-integracion-strapi.sql.example copservir-integracion-strapi.sql
+```
+- Desde phpMyAdmin, crea una base de datos con el mismo nombre del archivo SQL e importa el archivo SQL.
+
+### 2. Clonar el Repositorio:
+
+```bash
+git clone https://github.com/fabianmenjura/copservir-integracion-strapi.git
+```
+
+### 3. Navegar al Directorio del Proyecto:
+```bash
+cd tu-proyecto
+```
+
+### 4. Instalar Dependencias del Proyecto:
+```bash
+npm install
+```
+
+### 5. Configuración:
+Copia el archivo de configuración de ejemplo y renómbralo:
+```bash
+cp .env.example .env
+```
+Edita el archivo .env y configura las variables de entorno necesarias.
+
+#### Compilar la Aplicación:
+```bash
+npm run build
+```
+
+#### Iniciar la Aplicación:
+```bash
+npm start
+```
+
+Acceder a la Aplicación en tu Navegador Web:
+http://localhost:3000
+
+
+
+# 🚀 Getting Started with Strapi
 Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/dev-docs/cli) (CLI) which lets you scaffold and manage your project in seconds.
 
 ### `develop`
